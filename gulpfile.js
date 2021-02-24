@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 function css() {
     return src('./assets/sass/*.scss', { sourcemaps: true })
         .pipe(sass())
-        .pipe(minifyCSS())
+        //.pipe(minifyCSS())
         .pipe(dest('./'), { sourcemaps: true })
         .pipe(browserSync.stream());
 }
