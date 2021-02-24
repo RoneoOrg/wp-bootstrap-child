@@ -1,11 +1,11 @@
 <?php
 /**
-* Template Name: Full Width
+* Template Name: Full Width with Grid
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12">
+	<section id="primary" class="content-area col-12">
 		<div id="main" class="site-main page-grid" role="main">
 
 			<?php
