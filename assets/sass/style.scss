@@ -1,0 +1,329 @@
+/*
+Theme Name:     roneo.org
+Theme URI:      roneo.org
+Description:    Wp-bootstrap-starter child theme.
+Author:         roneo.org
+Author URI:     roneo.org
+Template:       wp-bootstrap-starter
+Version:        0.1.0
+*/
+
+
+/* #   Icons  (replaces Font-awesome)     */
+/* ****************************************/
+
+@font-face {
+	font-family: "icomoon";
+	src: url("inc/assets/fonts/icomoon.eot?lh0eib");
+	src: url("inc/assets/fonts/icomoon.eot?lh0eib#iefix")
+			format("embedded-opentype"),
+		url("inc/assets/fonts/icomoon.ttf?lh0eib") format("truetype"),
+		url("inc/assets/fonts/icomoon.woff?lh0eib") format("woff"),
+		url("inc/assets/fonts/icomoon.svg?lh0eib#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Overwrite default icons */
+
+.fa-edit:before {
+	content: "\f044";
+	color: #9a9a9a;
+	position: relative;
+	top: 1px;
+	padding-right: 6px;
+}
+
+.fa-comments:before {
+	content: "\f086";
+	color: #9a9a9a;
+	padding: 0 3px 0 10px;
+}
+
+.fa-angle-down:before {
+	content: "\f078" !important;
+}
+
+/* Add more icons */
+
+footer .edit-link:before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	content: "\f044";
+	color: #9a9a9a;
+	position: relative;
+	top: 1px;
+	padding-right: 6px;
+}
+
+.icon-envelope-o:before {
+	content: "\f003";
+}
+
+.icon-pencil-square-o:before {
+	content: "\f044";
+}
+.icon-facebook-square:before {
+	content: "\f082";
+}
+.icon-envelope:before {
+	content: "\f0e0";
+}
+.icon-chevron-circle-left:before {
+	content: "\f137";
+}
+.icon-chevron-circle-right:before {
+	content: "\f138";
+}
+.icon-paper-plane:before {
+	content: "\f1d8";
+}
+.icon-send:before {
+	content: "\f1d8";
+}
+.icon-paper-plane-o:before {
+	content: "\f1d9";
+}
+.icon-send-o:before {
+	content: "\f1d9";
+}
+.icon-user-circle-o:before {
+	content: "\f2be";
+}
+
+/* # Footer  /  link to wp-admin */
+
+.site-footer {
+	position: relative;
+}
+
+.footer-login {
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+}
+
+#colophon .footer-login a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #9a9a9a;
+	padding: 1.1em;
+	opacity: 40%;
+}
+
+
+#colophon .footer-login a:hover {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #333;
+	padding: 1.1em;
+	opacity: 40%;
+}
+
+
+
+//  #  Import en vrac depuis l'ancienne version "Vaness sur wp.local" TODO: trier
+/////////////////////////////////////////////////////////////////
+
+/* Header */
+
+.navbar-brand a {
+	font-family: "Arbutus Slab", serif;
+	text-transform: none;
+  }
+  
+  .navbar-toggler-icon {
+	display: none;
+  }
+  
+  /* Hero */
+  
+  #page-sub-header h1 {
+	padding-top: 1em;
+  }
+  
+  .fa-angle-down {
+	display: none !important;
+  }
+  
+  
+  /* Post meta        */
+  /****************** */
+  
+  .entry-meta {
+	padding-left: 2em;
+  }
+  
+  /* Hide author name */
+  .byline,
+  .single .byline {
+	display: none;
+  }
+  
+  .cat-links {
+	display: none;
+  }
+  
+  .tags-links {
+	display: none;
+  }
+  
+  /* Pictures     */
+  /* ************ */
+  
+  .wp-block-image {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-bottom: 3em;
+  }
+  
+  p.attachment > * {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-bottom: 3em;
+  }
+  
+  .wp-block-image figcaption {
+	text-align: center;
+  }
+  
+  /* Attachement - single page */
+  
+  h1.entry-title {
+	font-size: 2.6rem;
+  }
+  
+  /* Content footer */
+  
+  .entry-footer {
+	display: flex;
+	justify-content: center;
+	padding-top: 1em;
+  }
+  
+  .comments-link i {
+	padding-right: 0.2em;
+	padding-left: 0.5em;
+  }
+  
+  /* Sidebar */
+  
+  #custom_html-4 h3 {
+	padding-top: 4em;
+  }
+  
+  /* Comments         */
+  /* **************** */
+  
+  /* Do not display allowed HTML */
+  .form-allowed-tags {
+	display: none;
+  }
+  
+  .form-allowed-tags + div.alert {
+	display: none;
+  }
+  
+  .card-header {
+	  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	  background: #FCFCFC;
+		border-bottom: 1px solid #E5E5E5;
+		overflow: hidden;
+		border-radius: 4px 4px 0 0;
+  }
+  
+  
+  .media-body h5 a {
+	font-style: normal;
+  }
+  
+  .media-body cite {
+	font-style: normal;
+	text-transform: capitalize;
+  }
+  
+  .media-body .comment-meta {
+	display: flex;
+	justify-content: end;
+	font-size: 0.8em;
+  }
+  
+  .comment-meta .icon-edit:before {
+	padding-left: 6px;
+	padding-right: 0px;
+  }
+  .media-body .comment-content {
+	color: #595959;
+	background: #FFF;
+  }
+  
+  .card-footer {
+	  padding: 0.75rem 2.25rem;
+	border-top: 0px;
+	background-color: #FFF;
+  }
+  
+  .form-submit {
+	display: flex;
+	justify-content: center;
+  }
+  
+  /* Footer */
+  
+  #footer-widget {
+	padding-bottom: 3em;
+  }
+  
+  .widget_custom_html a {
+	font-size: 1.875rem;
+  }
+  
+  .site-footer {
+	position: relative;
+	height: 4em;
+  }
+  
+  .site-footer > .container {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .footer-login {
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+  }
+  
+  #colophon .footer-login a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #9a9a9a;
+	padding: 1.1em;
+	opacity: 40%;
+  }
+  
