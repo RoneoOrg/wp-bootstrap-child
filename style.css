@@ -7,3 +7,5 @@ Author URI:     roneo.org
 Template:       wp-bootstrap-starter
 Version:        0.1.0
 */
+body {
+  color: red !important; }
