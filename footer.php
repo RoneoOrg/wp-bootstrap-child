@@ -16,8 +16,16 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-		<div class="container pt-3 pb-3">
-            <div class="site-info">
+	<div class="footer-login">
+			<?php echo '<a href="'.home_url().'/wp-admin" aria-label="Administration">
+			<span aria-hidden="true" class="icon-user-circle-o"> </span>
+			</a>'; ?>
+	</div>
+
+	<div class="container pt-3 pb-3">
+
+
+	<div class="site-info">
             	<?php 
             	
             		if ( get_theme_mod( 'bottom_footer_setting' ) ) {
