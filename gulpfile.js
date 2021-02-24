@@ -1,25 +1,39 @@
-// Source: https://wpbeaches.com/getting-browsersync-running-with-gulp-4-and-valet/
+// Source: https://jasonyingling.me/modern-javascript-sass-gulp-wordpress-workflow/
+const { src, dest, watch, series } = require('gulp');
+const sass = require('gulp-sass');
+const minifyCSS = require('gulp-csso');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
 
-const gulp = require("gulp");
-const browserSync = require("browser-sync").create();
-const sitename = 'localhost'; // set your siteName here
-
-
-function watch() {
-	browserSync.init({
-
-		// proxy: sitename +'.test',
-		// or if site is http comment out below block and uncomment line above
-		proxy: sitename + '/wp',
-		host: sitename,
-		open: 'external',
-	});
-
-	// Watched files paths
-	gulp.watch('./*.php').on('change', browserSync.reload);
-	gulp.watch('./js/*.js').on('change', browserSync.reload);
-	gulp.watch('./css/*.css').on('change', browserSync.reload);
-	gulp.watch('./*css').on('change', browserSync.reload);
+function css() {
+    return src('./assets/sass/*.scss', { sourcemaps: true })
+        .pipe(sass())
+        .pipe(minifyCSS())
+        .pipe(dest('./'), { sourcemaps: true })
+        .pipe(browserSync.stream());
 }
 
-exports.default = watch;
+function js() {
+    return src('./assets/js/*.js', { sourcemaps: true })
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('build.min.js'))
+        .pipe(dest('./js/min', { sourcemaps: true }));
+}
+
+function browser() {
+    browserSync.init({
+        proxy: 'wp.local',
+        files: [
+            './**/*.php'
+        ]
+    });
+    watch('./assets/sass/**/*.scss', css);
+    watch('./assets/js/*.js', js).on('change', browserSync.reload);
+}
+
+exports.css = css;
+exports.js = js;
+exports.default = series(css,js,browser);

@@ -1,11 +1,1 @@
-/*
-Theme Name:     roneo.org
-Theme URI:      roneo.org
-Description:    Wp-bootstrap-starter child theme.
-Author:         roneo.org
-Author URI:     roneo.org
-Template:       wp-bootstrap-starter
-Version:        0.1.0
-*/
-body {
-  color: red !important; }
+body{color:pink!important}
