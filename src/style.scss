@@ -8,7 +8,41 @@ Template:       wp-bootstrap-starter
 Version:        0.1.0
 */
 
+// #	Pagination
 
+$nav-link-size: 5vw;
+
+.nav-link--previous,
+.nav-link--next {
+	position: fixed;
+	top: 50vh;
+}
+
+.nav-link--previous {
+	left: 1em;
+}
+
+.nav-link--previous::before{
+	content: "";
+	background-image: url(assets/img/icons/arrow-left-o.svg);
+	display: inline-block;
+	background-size: $nav-link-size $nav-link-size;
+	height: $nav-link-size;
+	width: $nav-link-size;
+}
+
+.nav-link--next {
+	right: 2em;
+}
+
+.nav-link--next::before{
+	content: "";
+	background-image: url(assets/img/icons/arrow-right-o.svg);
+	display: inline-block;
+	background-size: $nav-link-size $nav-link-size;
+	height: $nav-link-size;
+	width: $nav-link-size;
+}
 
 
 /* #	Page-grid 		*/
@@ -394,3 +428,8 @@ h1.entry-title {
 	padding: 1.1em;
 	opacity: 40%;
 }
+=========
+body {	
+    color: pink !important;
+}
+>>>>>>>>> Temporary merge branch 2:src/style.scss
