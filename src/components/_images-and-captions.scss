@@ -1,13 +1,11 @@
 
-/*  Images and captions    */
-/* *********************** */
+/* #  Images and captions    */
 
 .wp-block-image {
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	padding-bottom: 3em;
 }
 
 p.attachment>* {
@@ -15,7 +13,6 @@ p.attachment>* {
 	align-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	padding-bottom: 3em;
 }
 
 .wp-block-image figcaption {
