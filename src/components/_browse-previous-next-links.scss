@@ -23,13 +23,13 @@ $browse-links-size: 5vw;
 .browse-links--previous {
 	left: 1em;
   &::before{
-    background-image: url(assets/img/icons/arrow-left-o.svg);
+    background-image: url(inc/icons/arrow-left-o.svg);
   }
 }
 
 .browse-links--next {
 	right: 2em;
   &::before{
-    background-image: url(assets/img/icons/arrow-right-o.svg);
+    background-image: url(inc/icons/arrow-right-o.svg);
   }
 }
