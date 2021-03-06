@@ -1,5 +1,4 @@
-// Source: https://jasonyingling.me/modern-javascript-sass-gulp-wordpress-workflow/
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-csso');
 const babel = require('gulp-babel');
@@ -7,7 +6,7 @@ const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
 function css() {
-    return src('./assets/sass/*.scss', { sourcemaps: true })
+    return src('./src/*.scss', { sourcemaps: true })
         .pipe(sass())
         .pipe(minifyCSS())
         .pipe(dest('./'), { sourcemaps: true })
@@ -15,7 +14,7 @@ function css() {
 }
 
 function js() {
-    return src('./assets/js/*.js', { sourcemaps: true })
+    return src('./js/*.js', { sourcemaps: true })
         .pipe(babel({
             presets: ['@babel/env']
         }))
@@ -30,10 +29,11 @@ function browser() {
             './**/*.php'
         ]
     });
-    watch('./assets/sass/**/*.scss', css);
-    watch('./assets/js/*.js', js).on('change', browserSync.reload);
+
+    watch('./src/**/*.scss', css);
+    watch('./js/*.js', js).on('change', browserSync.reload);
 }
 
 exports.css = css;
 exports.js = js;
-exports.default = series(css,js,browser);
+exports.default = browser;
