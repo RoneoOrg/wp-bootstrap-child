@@ -27,39 +27,36 @@ Version:        0.1.0
 }
 
 // #	Pagination
+// depends on themes/wp-bootstrap-starter/template-parts/content.php
 
-$nav-link-size: 5vw;
+$navigate-size: 5vw;
 
-.nav-link--previous,
-.nav-link--next {
+.navigate {
 	position: fixed;
-	top: 50vh;
+	top: 70vh;
 }
 
-.nav-link--previous {
+.navigate::before {
+  content: "";
+  display: inline-block;
+  background-size: $navigate-size $navigate-size;
+  height: $navigate-size;
+  width: $navigate-size;
+  
+}
+
+.navigate--previous {
 	left: 1em;
+  &::before{
+    background-image: url(assets/img/icons/arrow-left-o.svg);
+  }
 }
 
-.nav-link--previous::before{
-	content: "";
-	background-image: url(assets/img/icons/arrow-left-o.svg);
-	display: inline-block;
-	background-size: $nav-link-size $nav-link-size;
-	height: $nav-link-size;
-	width: $nav-link-size;
-}
-
-.nav-link--next {
+.navigate--next {
 	right: 2em;
-}
-
-.nav-link--next::before{
-	content: "";
-	background-image: url(assets/img/icons/arrow-right-o.svg);
-	display: inline-block;
-	background-size: $nav-link-size $nav-link-size;
-	height: $nav-link-size;
-	width: $nav-link-size;
+  &::before{
+    background-image: url(assets/img/icons/arrow-right-o.svg);
+  }
 }
 
 
