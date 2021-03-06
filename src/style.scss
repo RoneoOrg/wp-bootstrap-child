@@ -10,97 +10,44 @@ Version:        0.1.0
 
 
 @import "./components/top-bar-navigation";
+@import "./components/hero";
 @import "./components/homepage-grid";
+@import "./components/post-meta";
 @import "./components/icons-icomoon";
 @import "./components/browse-previous-next-links";
 @import "./components/comments";
 @import "./components/footer";
 
 
-//  #  Import en vrac depuis l'ancienne version "Vaness sur wp.local" TODO: trier
+//  #  Archives
 /////////////////////////////////////////////////////////////////
 
-/* Header */
-
-.navbar-brand a {
-	font-family: "Arbutus Slab", serif;
-	text-transform: none;
-}
-
-.navbar-toggler-icon {
-	display: none;
-}
-
-/* Hero */
-
-#page-sub-header h1 {
-	padding-top: 1em;
-}
-
-.fa-angle-down {
-	display: none !important;
-}
-
-
-/* Post meta        */
-/****************** */
-
-.entry-meta {
-	padding-left: 2em;
-}
-
-/* Hide author name */
-.byline,
-.single .byline {
-	display: none;
-}
-
-.cat-links {
-	display: none;
-}
-
-.tags-links {
-	display: none;
-}
 
 /* Pictures     */
 /* ************ */
 
-.wp-block-image {
-	display: flex;
-	align-content: center;
-	flex-wrap: wrap;
-	flex-direction: column;
-	padding-bottom: 3em;
-}
+// .wp-block-image {
+// 	display: flex;
+// 	align-content: center;
+// 	flex-wrap: wrap;
+// 	flex-direction: column;
+// 	padding-bottom: 3em;
+// }
 
-p.attachment>* {
-	display: flex;
-	align-content: center;
-	flex-wrap: wrap;
-	flex-direction: column;
-	padding-bottom: 3em;
-}
+// p.attachment>* {
+// 	display: flex;
+// 	align-content: center;
+// 	flex-wrap: wrap;
+// 	flex-direction: column;
+// 	padding-bottom: 3em;
+// }
 
-.wp-block-image figcaption {
-	text-align: center;
-}
+// .wp-block-image figcaption {
+// 	text-align: center;
+// }
 
-/* Attachement - single page */
+// /* Attachement - single page */
 
-h1.entry-title {
-	font-size: 2.6rem;
-}
-
-/* Content footer */
-
-.entry-footer {
-	display: flex;
-	justify-content: center;
-	padding-top: 1em;
-}
-
-.comments-link i {
-	padding-right: 0.2em;
-	padding-left: 0.5em;
-}
+// h1.entry-title {
+// 	font-size: 2.6rem;
+// }
