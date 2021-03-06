@@ -14,31 +14,31 @@ Version:        0.1.0
 // #	Pagination
 // depends on themes/wp-bootstrap-starter/template-parts/content.php
 
-$navigate-size: 5vw;
+$browse-links-size: 5vw;
 
-.navigate {
+.browse-links {
 	position: fixed;
 	top: 70vh;
   	z-index: 4;
 }
 
-.navigate::before {
+.browse-links::before {
   content: "";
   display: inline-block;
-  background-size: $navigate-size $navigate-size;
-  height: $navigate-size;
-  width: $navigate-size;
+  background-size: $browse-links-size $browse-links-size;
+  height: $browse-links-size;
+  width: $browse-links-size;
   
 }
 
-.navigate--previous {
+.browse-links--previous {
 	left: 1em;
   &::before{
     background-image: url(assets/img/icons/arrow-left-o.svg);
   }
 }
 
-.navigate--next {
+.browse-links--next {
 	right: 2em;
   &::before{
     background-image: url(assets/img/icons/arrow-right-o.svg);
