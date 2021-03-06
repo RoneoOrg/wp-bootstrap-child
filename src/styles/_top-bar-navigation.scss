@@ -1,0 +1,19 @@
+
+
+// #  Top-bar Navigation
+
+.navbar {
+  min-height: 3rem;
+}
+
+#main-nav {
+  position: relative;
+  top: 2.2em;
+  background-color: #333;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.navbar-nav li {
+  padding-right: 1.8em;
+}
