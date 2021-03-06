@@ -9,12 +9,12 @@ Version:        0.1.0
 */
 
 
-@import "./styles/top-bar-navigation";
-@import "./styles/browse-previous-next-links";
-@import "./styles/homepage-grid";
-@import "./styles/icons-icomoon";
-@import "./styles/comments";
-@import "./styles/footer";
+@import "./components/top-bar-navigation";
+@import "./components/homepage-grid";
+@import "./components/icons-icomoon";
+@import "./components/browse-previous-next-links";
+@import "./components/comments";
+@import "./components/footer";
 
 
 //  #  Import en vrac depuis l'ancienne version "Vaness sur wp.local" TODO: trier
