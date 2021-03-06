@@ -71,7 +71,7 @@ $navigate-size: 5vw;
 .page-grid .entry-content {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr;
+  grid-template-rows: repeat(8, 1fr);
 }
 
 .page-grid .entry-content figure:nth-child(1) {
