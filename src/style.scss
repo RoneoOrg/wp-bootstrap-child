@@ -8,6 +8,24 @@ Template:       wp-bootstrap-starter
 Version:        0.1.0
 */
 
+// #  Navigation
+
+.navbar {
+  min-height: 3rem;
+}
+
+#main-nav {
+  position: relative;
+  top: 2.2em;
+  background-color: #333;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.navbar-nav li {
+  padding-right: 1.8em;
+}
+
 // #	Pagination
 
 $nav-link-size: 5vw;
