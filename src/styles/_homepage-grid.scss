@@ -1,59 +1,59 @@
 
 
-/* #	Page-grid 		*/
+/* #	Homepage-grid 		*/
 
-.page-grid img {
+.homepage-grid img {
   min-height: 30vh;
   object-fit:cover;
 }
 
-.page-grid .entry-content {
+.homepage-grid .entry-content {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 4rem);
 }
 
-.page-grid .entry-content figure:nth-child(1) {
+.homepage-grid .entry-content figure:nth-child(1) {
 	grid-column: 3 / 8;
 	grid-row: 1 / 5;
 	z-index: 2;
 	transform: rotate(-3deg);
 }
 
-.page-grid .entry-content figure:nth-child(2) {
+.homepage-grid .entry-content figure:nth-child(2) {
 	grid-column: 7 / 11;
 	grid-row: 3 / 10;
 	transform: rotate(6deg);
 }
 
-.page-grid .entry-content figure:nth-child(3) {
+.homepage-grid .entry-content figure:nth-child(3) {
 	grid-column: 2 / 7;
 }
 
 //  Effets supplémentaires
 
-.page-grid .entry-content figure:nth-child(2) {
+.homepage-grid .entry-content figure:nth-child(2) {
 	transition-duration: 0.3s;
 }
 
-.page-grid .entry-content figure:nth-child(2):hover {
+.homepage-grid .entry-content figure:nth-child(2):hover {
 	z-index: 4;
 	transform: rotate(3deg) scale(1.1, 1.1);
 	transition-duration: 0.3s;
 }
 
-.page-grid .entry-content figure:nth-child(3) {
+.homepage-grid .entry-content figure:nth-child(3) {
 	transition-duration: 0.3s;
 	transform: rotate(-1deg);
 }
 
-.page-grid .entry-content figure:nth-child(3):hover {
+.homepage-grid .entry-content figure:nth-child(3):hover {
 	z-index: 4;
 	transform:  rotate(-1deg)  scale(1.2, 1.2);
 	transition-duration: 0.3s;
 }
 
-.page-grid .entry-content img {
+.homepage-grid .entry-content img {
 	border: 8px solid rgba(255, 255, 255, 0.808);
 	-webkit-box-shadow: 3px 3px 13px 0px rgba(140, 136, 140, 1);
 	-moz-box-shadow: 3px 3px 13px 0px rgba(140, 136, 140, 1);

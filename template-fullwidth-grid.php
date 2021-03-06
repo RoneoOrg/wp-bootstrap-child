@@ -6,7 +6,7 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area col-12">
-		<div id="main" class="site-main page-grid" role="main">
+		<div id="main" class="site-main homepage-grid" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();
