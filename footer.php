@@ -20,6 +20,9 @@
 			<?php echo '<a href="'.home_url().'/wp-admin" aria-label="Administration">
 			<span aria-hidden="true" class="icon-user-circle-o"> </span>
 			</a>'; ?>
+			<a href="https://www.ovh.com/fr/mail/" aria-label="Mail">
+			<span aria-hidden="true" class="icon-envelope"> </span>
+			</a>
 	</div>
 
 	<div class="container pt-3 pb-3">

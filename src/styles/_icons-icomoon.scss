@@ -1,14 +1,7 @@
-/*
-Theme Name:     roneo.org
-Theme URI:      roneo.org
-Description:    Wp-bootstrap-starter child theme.
-Author:         roneo.org
-Author URI:     roneo.org
-Template:       wp-bootstrap-starter
-Version:        0.1.0
-*/
 
-/* #   Icons  (replaces Font-awesome)     */
+
+
+/* #   Icons with Icomoon  (replaces Font-awesome)     */
 /* ****************************************/
 
 @font-face {
@@ -83,59 +76,39 @@ footer .edit-link:before {
 .icon-pencil-square-o:before {
 	content: "\f044";
 }
+
 .icon-facebook-square:before {
 	content: "\f082";
 }
+
 .icon-envelope:before {
 	content: "\f0e0";
 }
+
 .icon-chevron-circle-left:before {
 	content: "\f137";
 }
+
 .icon-chevron-circle-right:before {
 	content: "\f138";
 }
+
 .icon-paper-plane:before {
 	content: "\f1d8";
 }
+
 .icon-send:before {
 	content: "\f1d8";
 }
+
 .icon-paper-plane-o:before {
 	content: "\f1d9";
 }
+
 .icon-send-o:before {
 	content: "\f1d9";
 }
+
 .icon-user-circle-o:before {
 	content: "\f2be";
-}
-
-/* # Footer  /  link to wp-admin */
-
-.site-footer {
-	position: relative;
-}
-
-.footer-login {
-	position: absolute;
-	left: 20px;
-	bottom: 10px;
-}
-
-#colophon .footer-login a {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #9a9a9a;
-	padding: 1.1em;
-	opacity: 40%;
-}
-
-
-#colophon .footer-login a:hover {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #333;
-	padding: 1.1em;
-	opacity: 40%;
 }
