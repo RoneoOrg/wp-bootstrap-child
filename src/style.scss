@@ -13,37 +13,7 @@ Version:        0.1.0
 @import "./styles/browse-previous-next-links";
 @import "./styles/homepage-grid";
 @import "./styles/icons-icomoon";
-
-
-/* # Footer  /  link to wp-admin */
-
-.site-footer {
-	position: relative;
-}
-
-.footer-login {
-	position: absolute;
-	left: 20px;
-	bottom: 10px;
-}
-
-#colophon .footer-login a {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #9a9a9a;
-	padding: 1.1em;
-	opacity: 40%;
-}
-
-
-#colophon .footer-login a:hover {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #333;
-	padding: 1.1em;
-	opacity: 40%;
-}
-
+@import "./styles/footer";
 
 
 //  #  Import en vrac depuis l'ancienne version "Vaness sur wp.local" TODO: trier
