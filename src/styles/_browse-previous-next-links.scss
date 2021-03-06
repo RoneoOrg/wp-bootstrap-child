@@ -1,0 +1,35 @@
+
+
+// #	Browse / previous & next post links / Pagination
+// depends on themes/wp-bootstrap-starter/template-parts/content.php
+
+$browse-links-size: 5vw;
+
+.browse-links {
+	position: fixed;
+	top: 70vh;
+  z-index: 4;
+}
+
+.browse-links::before {
+  content: "";
+  display: inline-block;
+  background-size: $browse-links-size $browse-links-size;
+  height: $browse-links-size;
+  width: $browse-links-size;
+  
+}
+
+.browse-links--previous {
+	left: 1em;
+  &::before{
+    background-image: url(assets/img/icons/arrow-left-o.svg);
+  }
+}
+
+.browse-links--next {
+	right: 2em;
+  &::before{
+    background-image: url(assets/img/icons/arrow-right-o.svg);
+  }
+}
