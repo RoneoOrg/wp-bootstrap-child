@@ -104,38 +104,3 @@ h1.entry-title {
 	padding-right: 0.2em;
 	padding-left: 0.5em;
 }
-
-
-/* Footer */
-
-#footer-widget {
-	padding-bottom: 3em;
-}
-
-.widget_custom_html a {
-	font-size: 1.875rem;
-}
-
-.site-footer {
-	position: relative;
-	height: 4em;
-}
-
-.site-footer>.container {
-	display: flex;
-	justify-content: center;
-}
-
-.footer-login {
-	position: absolute;
-	left: 20px;
-	bottom: 10px;
-}
-
-#colophon .footer-login a {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #9a9a9a;
-	padding: 1.1em;
-	opacity: 40%;
-}
