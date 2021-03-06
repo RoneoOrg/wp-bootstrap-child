@@ -13,6 +13,7 @@ Version:        0.1.0
 @import "./styles/browse-previous-next-links";
 @import "./styles/homepage-grid";
 @import "./styles/icons-icomoon";
+@import "./styles/comments";
 @import "./styles/footer";
 
 
@@ -104,62 +105,6 @@ h1.entry-title {
 	padding-left: 0.5em;
 }
 
-/* Comments         */
-/* **************** */
-
-/* Do not display allowed HTML */
-.form-allowed-tags {
-	display: none;
-}
-
-.form-allowed-tags+div.alert {
-	display: none;
-}
-
-.card-header {
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	background: #FCFCFC;
-	border-bottom: 1px solid #E5E5E5;
-	overflow: hidden;
-	border-radius: 4px 4px 0 0;
-}
-
-
-.media-body h5 a {
-	font-style: normal;
-}
-
-.media-body cite {
-	font-style: normal;
-	text-transform: capitalize;
-}
-
-.media-body .comment-meta {
-	display: flex;
-	justify-content: end;
-	font-size: 0.8em;
-}
-
-.comment-meta .icon-edit:before {
-	padding-left: 6px;
-	padding-right: 0px;
-}
-
-.media-body .comment-content {
-	color: #595959;
-	background: #FFF;
-}
-
-.card-footer {
-	padding: 0.75rem 2.25rem;
-	border-top: 0px;
-	background-color: #FFF;
-}
-
-.form-submit {
-	display: flex;
-	justify-content: center;
-}
 
 /* Footer */
 
