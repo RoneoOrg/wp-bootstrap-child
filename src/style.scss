@@ -71,7 +71,7 @@ $navigate-size: 5vw;
 .page-grid .entry-content {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 4rem);
 }
 
 .page-grid .entry-content figure:nth-child(1) {
@@ -83,7 +83,7 @@ $navigate-size: 5vw;
 
 .page-grid .entry-content figure:nth-child(2) {
 	grid-column: 7 / 11;
-	grid-row: 3 / 8;
+	grid-row: 3 / 10;
 	transform: rotate(6deg);
 }
 
