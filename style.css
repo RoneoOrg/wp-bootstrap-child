@@ -1,0 +1,277 @@
+/*
+Theme Name:     roneo.org
+Theme URI:      roneo.org
+Description:    Wp-bootstrap-starter child theme.
+Author:         roneo.org
+Author URI:     roneo.org
+Template:       wp-bootstrap-starter
+Version:        0.1.0
+*/
+/* #  Top-bar Navigation */
+.navbar {
+  min-height: 3rem; }
+
+#main-nav {
+  position: relative;
+  top: 2.2em;
+  background-color: #333;
+  z-index: 2;
+  max-width: 800px; }
+
+.navbar-nav li {
+  padding-right: 1.8em; }
+
+/* #   Hero   */
+.fa-angle-down {
+  display: none !important; }
+
+/* #   Homepage-grid 		*/
+.homepage-grid img {
+  min-height: 30vh;
+  object-fit: cover; }
+
+.homepage-grid .entry-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 4rem); }
+
+.homepage-grid .entry-content figure:nth-child(1) {
+  grid-column: 3 / 8;
+  grid-row: 1 / 5;
+  z-index: 2;
+  transform: rotate(-3deg); }
+
+.homepage-grid .entry-content figure:nth-child(2) {
+  grid-column: 7 / 11;
+  grid-row: 3 / 10;
+  transform: rotate(6deg); }
+
+.homepage-grid .entry-content figure:nth-child(3) {
+  grid-column: 2 / 7; }
+
+.homepage-grid .entry-content img {
+  border: 8px solid white;
+  -webkit-box-shadow: 3px 3px 13px 0px #8c888c;
+  -moz-box-shadow: 3px 3px 13px 0px #8c888c;
+  box-shadow: 3px 3px 13px 0px #8c888c; }
+
+.homepage-grid .entry-content figure:nth-child(2) {
+  transition-duration: 0.3s; }
+
+.homepage-grid .entry-content figure:nth-child(2):hover {
+  z-index: 4;
+  transform: rotate(3deg) scale(1.1, 1.1);
+  transition-duration: 0.3s; }
+
+.homepage-grid .entry-content figure:nth-child(3) {
+  transition-duration: 0.3s;
+  transform: rotate(-1deg); }
+
+.homepage-grid .entry-content figure:nth-child(3):hover {
+  z-index: 4;
+  transform: rotate(-1deg) scale(1.2, 1.2);
+  transition-duration: 0.3s; }
+
+/* #  Images and captions    */
+.wp-block-image {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+p.attachment > * {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.wp-block-image figcaption {
+  text-align: center; }
+
+/* #  Post meta    */
+.byline {
+  display: none !important; }
+
+.cat-links {
+  display: none; }
+
+.tags-links {
+  display: none; }
+
+/* #   Icons with Icomoon  (replaces Font-awesome)     */
+@font-face {
+  font-family: "icomoon";
+  src: url("inc/fonts/icomoon.eot?lh0eib");
+  src: url("inc/fonts/icomoon.eot?lh0eib#iefix") format("embedded-opentype"), url("inc/fonts/icomoon.ttf?lh0eib") format("truetype"), url("inc/fonts/icomoon.woff?lh0eib") format("woff"), url("inc/fonts/icomoon.svg?lh0eib#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Overwrite default icons */
+.fa-edit:before {
+  content: "\f044";
+  color: #9a9a9a;
+  position: relative;
+  top: 1px;
+  padding-right: 6px; }
+
+.fa-comments:before {
+  content: "\f086";
+  color: #9a9a9a;
+  padding: 0 3px 0 10px; }
+
+.fa-angle-down:before {
+  content: "\f078" !important; }
+
+/* Add more icons */
+footer .edit-link:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\f044";
+  color: #9a9a9a;
+  position: relative;
+  top: 1px;
+  padding-right: 6px; }
+
+.icon-envelope-o:before {
+  content: "\f003"; }
+
+.icon-pencil-square-o:before {
+  content: "\f044"; }
+
+.icon-facebook-square:before {
+  content: "\f082"; }
+
+.icon-envelope:before {
+  content: "\f0e0"; }
+
+.icon-chevron-circle-left:before {
+  content: "\f137"; }
+
+.icon-chevron-circle-right:before {
+  content: "\f138"; }
+
+.icon-paper-plane:before {
+  content: "\f1d8"; }
+
+.icon-send:before {
+  content: "\f1d8"; }
+
+.icon-paper-plane-o:before {
+  content: "\f1d9"; }
+
+.icon-send-o:before {
+  content: "\f1d9"; }
+
+.icon-user-circle-o:before {
+  content: "\f2be"; }
+
+/* #	Browse / previous & next post links / Pagination */
+/* depends on themes/wp-bootstrap-starter/template-parts/content.php */
+.browse-links {
+  position: fixed;
+  top: 70vh;
+  z-index: 4; }
+
+.browse-links::before {
+  content: "";
+  display: inline-block;
+  background-size: 5vw 5vw;
+  height: 5vw;
+  width: 5vw; }
+
+.browse-links--previous {
+  left: 1em; }
+  .browse-links--previous::before {
+    background-image: url(inc/icons/arrow-left-o.svg); }
+
+.browse-links--next {
+  right: 2em; }
+  .browse-links--next::before {
+    background-image: url(inc/icons/arrow-right-o.svg); }
+
+/* Comments         */
+/* **************** */
+/* Do not display allowed HTML */
+.form-allowed-tags {
+  display: none; }
+
+.form-allowed-tags + div.alert {
+  display: none; }
+
+.card-header {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  background: #FCFCFC;
+  border-bottom: 1px solid #E5E5E5;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0; }
+
+.media-body h5 a {
+  font-style: normal; }
+
+.media-body cite {
+  font-style: normal;
+  text-transform: capitalize; }
+
+.media-body .comment-meta {
+  display: flex;
+  justify-content: end;
+  font-size: 0.8em; }
+
+.comment-meta .icon-edit:before {
+  padding-left: 6px;
+  padding-right: 0px; }
+
+.media-body .comment-content {
+  color: #595959;
+  background: #FFF; }
+
+.card-footer {
+  padding: 0.75rem 2.25rem;
+  border-top: 0px;
+  background-color: #FFF; }
+
+.form-submit {
+  display: flex;
+  justify-content: center; }
+
+/* # Footer  /  link to wp-admin */
+.site-footer {
+  position: relative; }
+
+.footer-login {
+  position: absolute;
+  left: 20px;
+  bottom: 10px; }
+
+#colophon .footer-login a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #9a9a9a;
+  padding: 1.1em;
+  opacity: 40%; }
+
+#colophon .footer-login a:hover {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #333;
+  padding: 1.1em;
+  opacity: 40%; }
